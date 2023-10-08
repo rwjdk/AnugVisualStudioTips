@@ -1,4 +1,5 @@
 ﻿@page "/counter"
+@using System.Security.Cryptography
 
 <PageTitle>Counter</PageTitle>
 
@@ -9,10 +10,17 @@
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
-    private int currentCount = 1;
-
+    private int currentCount = 0;
     private void IncrementCount()
     {
         currentCount++;
     }
 }
+
+@* Demo Notes 
+    - Webpage top, code bottom
+    - Apply click or via save
+    - Change HTML and CSS
+    - Change logic
+    - Things unable to handle (rename currentCount to _currentCount)
+*@

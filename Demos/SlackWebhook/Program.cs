@@ -14,6 +14,7 @@ app.MapPost("/webhook", async (HttpRequest request) =>
 {
     var json = await new StreamReader(request.Body).ReadToEndAsync();
     var slackEvent = JsonConvert.DeserializeObject<Event>(json);
+
     switch (slackEvent)
     {
         case EventCallback callback:

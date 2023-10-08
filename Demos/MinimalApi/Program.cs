@@ -38,6 +38,8 @@ app.MapGet("/weatherforecast", () =>
 
 app.MapGet("/", (string? name) => $"Hello {name}");
 
+app.MapGet($"/myEndpoint{"xyz"}", (string? name) => $"My Endpoint Hello {name}");
+
 app.MapPost("/AddData", (HttpRequest request) =>
 {
     var json = request.BodyReader.ToString();
