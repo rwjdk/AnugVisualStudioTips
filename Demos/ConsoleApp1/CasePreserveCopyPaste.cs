@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp1;
 internal class CasePreserveCopyPaste
 {
-    private string Person;
-    private string _person;
-    private string PERSON { get; set; }
+    private string Animal;
+    private string _animal;
+    private string ANIMAL { get; set; }
 }

@@ -15,6 +15,7 @@ internal class StickyScroll
     {
         int x = 0;
         Console.WriteLine("Hello World");
+        
         IEnumerable<object> myList = new List<string>
         {
             "Item 1",
@@ -29,7 +30,17 @@ internal class StickyScroll
             "Item 10",
         };
         foreach (var item in myList) {
-            Console.WriteLine(item);
+            Console.WriteLine();
+            
         }
+
+        
+
+
+
+
+
+
+
     }
 }
