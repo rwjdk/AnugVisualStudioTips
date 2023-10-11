@@ -1,0 +1,27 @@
+﻿@page "/counter"
+@using System.Security.Cryptography
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @_currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int _currentCount = 0;
+    private void IncrementCount()
+    {
+        //currentCount++;
+        _currentCount += 10;
+    }
+}
+
+@* Demo Notes 
+    - Webpage top, code bottom
+    - Apply click or via save
+    - Change HTML and CSS
+    - Change logic
+    - Things unable to handle (rename currentCount to _currentCount)
+*@

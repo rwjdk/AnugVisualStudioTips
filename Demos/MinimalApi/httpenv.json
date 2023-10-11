@@ -1,0 +1,8 @@
+{
+  "local": {
+    "Host": "http://localhost:5205"
+  },
+  "devtunnel": {
+    "Host": "https://vhpwhkmv-7233.euw.devtunnels.ms"
+  }
+}
